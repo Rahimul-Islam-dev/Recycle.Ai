@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ricycle.Ai - Recycling Ideas</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<style>
+  /* Basic Reset */
+  * {
+    box-sizing: border-box;
+  }
+
+
+</style>
+</head>
+<body>
+  <div class="logos">
+  <h1>Recycle.Ai <i class="fa-solid fa-wand-magic-sparkles" style="color: plum "></i></h1>
+  <a href="Login.html"><img src="" id="pro_logo" alt="Default">&nbsp;<span id="lo"></span></a>
+  </div>
+  <div class="body">
+  <div class="container">
+   <img src="re.png" alt="Logo">
+    <p>Enter the name of a product you no longer use, and we'll suggest creative ways to recycle or reuse it for a cleaner, greener future.</p>
+    
+    <input type="text" placeholder="Enter product name" id="userInput" maxlength="20"/>
+    <button type="button" style="font-family: "Outfit", serif;" onclick="sendMessage()">Get Ideas <i class="fa-solid fa-lightbulb" style="color: #FFD43B;"></i></button>
+    
+    <div id="response"></div>
+  </div>
+  </div>
+<!--
+ <script>
+    function showIdeas() {
+      const ideas = document.getElementById('response');
+      const input = document.getElementById('userInput').value.trim();
+      if (!input) {
+        ideas.textContent = 'Please enter a product name first.';
+      } else {
+        ideas.textContent = `Here are recycling or reuse ideas for "${input}".`;
+      }
+      ideas.classList.add('show');
+    }
+  </script>
+  -->
+  <script src="script.js"></script>
+  <script type="modiul" src="login.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+  <script type="module">
+  const proLogo = document.getElementById("pro_logo");
+  const stored = localStorage.getItem("user");
+  
+  // ডিফল্ট ইমেজ
+  const defaultPic = "default.jpg";
+  
+  if (proLogo) {
+    if (stored) {
+      const userData = JSON.parse(stored);
+      proLogo.src = userData.photo || defaultPic;
+    } else {
+      // ইউজার লগইন না থাকলে ডিফল্ট পিকচার দেখাও
+      proLogo.src = defaultPic;
+      lo = document.getElementById('lo').innerHTML = 'Log In'
+    }
+  }
+</script>
+</body>
+</html>

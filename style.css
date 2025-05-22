@@ -1,0 +1,116 @@
+  body{
+    background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    font-family: "Outfit", serif;
+  }
+ .body {
+    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .container {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px 30px;
+    max-width: 850px;
+    width: 100%;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  h1{
+    color: #602FFF;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .logos{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .logos a{
+    text-decoration: none;
+    display: flex;
+  }
+ .logos a span{
+   margin-top: 15px;
+ }
+  .logos img{
+    width: 40px;
+    border-radius: 50%;
+    border:1px black solid;
+    margin-top: 8px;
+  }
+  img{
+    width: 200px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    
+  }
+
+  p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #2a7a31;
+    border-radius: 50px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  input[type="text"]:focus {
+    border-color: #57c84d;
+    box-shadow: 0 0 8px #57c84d;
+  }
+
+  button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-radius: 50px;
+    background: #2a7a31;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  button:hover {
+    background-color: #57c84d;
+    transform: scale(1.05);
+  }
+
+  #response{
+    margin-top: 30px;
+    color: #2a7a31;
+    font-weight: 600;
+    min-height: 50px;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  /* Animation Keyframes */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
