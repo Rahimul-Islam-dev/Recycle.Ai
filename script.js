@@ -24,7 +24,7 @@ Keep the response short, practical, and within 10–14 lines. Do not explain too
 				method: 'POST',
 				headers: {
 					Authorization: 'Bearer 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',
-					'HTTP-Referer': 'https://www.sitename.com',
+					'HTTP-Referer': 'https://rahimul-islam-dev.github.io/Recycle.Ai/',
 					'X-Title': 'SiteName',
 					'Content-Type': 'application/json',
 				},
@@ -69,7 +69,7 @@ Keep the response clear, helpful, and within 10–14 lines.
 			{
 				method: 'POST',
 				headers: {
-					Authorization: 'Bearer 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',
+					Authorization: 'Bearer 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',
 					'HTTP-Referer': 'https://www.sitename.com',
 					'X-Title': 'SiteName',
 					'Content-Type': 'application/json',
